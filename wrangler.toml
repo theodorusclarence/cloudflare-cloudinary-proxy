@@ -1,0 +1,13 @@
+name = "cloudinary-proxy-dev"
+main = "index.js"
+account_id = "770daab7b49a7c4b48d8a1a925c4e794"
+compatibility_date = "2024-12-03"
+workers_dev = true
+vars = { ENVIRONMENT = "dev", CLOUD_NAME = "theodorusclarence" }
+[env.production]
+name = "cloudinary-proxy"
+vars = { ENVIRONMENT = "production", CLOUD_NAME = "theodorusclarence" }
+route = "images.theodorusclarence.com/*"
+zone_id = "c0eb35e2c946ad569aae5fd997b50bb3"
+[observability.logs]
+enabled = true
